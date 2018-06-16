@@ -2,49 +2,53 @@ import React, { Component, } from "react";
 import { View, Text } from 'react-native';
 import { Container, Header, Title, Content, Button, Icon, Right, Body, Left, Picker, Form, Item } from "native-base";
 
-const chooseCity = [
-  {
-    label: "Nghệ An",
-    value: "key0",
-    color: "black"
-  },
-  {
-    label: "Thanh Hóa",
-    value: "key1",
-    color: "black"
-  },
-  {
-    label: "Quảng Bình",
-    value: "key2",
-    color: "black"
-  },
-  {
-    label: "Hà Nội",
-    value: "key3",
-    color: "black"
-  },
-  {
-    label: "Sài Gòn",
-    value: "key4",
-    color: "black"
-  },
-  {
-    label: "Hà Nam",
-    value: "key5",
-    color: "black"
-  },
-  {
-    label: "Bình Dương",
-    value: "key6",
-    color: "black"
-  }
-]
+import cities from './data/tinh_tp.json';
+import quan_huyens from './data/quan_huyen.json';
+
+// const chooseCity = [
+//   {
+//     label: "Nghệ An",
+//     value: "key0",
+//     color: "black"
+//   },
+//   {
+//     label: "Thanh Hóa",
+//     value: "key1",
+//     color: "black"
+//   },
+//   {
+//     label: "Quảng Bình",
+//     value: "key2",
+//     color: "black"
+//   },
+//   {
+//     label: "Hà Nội",
+//     value: "key3",
+//     color: "black"
+//   },
+//   {
+//     label: "Sài Gòn",
+//     value: "key4",
+//     color: "black"
+//   },
+//   {
+//     label: "Hà Nam",
+//     value: "key5",
+//     color: "black"
+//   },
+//   {
+//     label: "Bình Dương",
+//     value: "key6",
+//     color: "black"
+//   }
+// ]
 
 export default class PickerExample extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      selected1: "key1"
+      selected1: "key0",
+      quan_huyens: []
     };
   }
   onValueChange(value) {
@@ -76,8 +80,8 @@ export default class PickerExample extends Component {
             <Picker
               iosHeader="Select one"
               mode="dropdown"
-              selectedValue={this.state.selected1}
-              onValueChange={this.onValueChange.bind(this)}
+            // selectedValue={this.state.selected1}
+            // onValueChange={this.onValueChange.bind(this)}
             >
               <Picker.Item label="Wallet" value="key0" color="black" />
               <Picker.Item label="ATM Card" value="key1" color="black" />
@@ -91,20 +95,26 @@ export default class PickerExample extends Component {
             header="Chọn Tỉnh/Thành phố"
             required
             mode="dialog"
-            items={chooseCity}
+            items={cities}
+            onValueChange={(item) => {
+              this.setState({
+                selected1: item
+              });
+            }}
+            selectedValue={this.state.selected1}
           />
-          <ItemPicker
+          {/* <ItemPicker
             header="Chọn Quận/Huyện"
             required
             mode="dialog"
-            items={chooseCity}
-          />
-          <ItemPicker
+            items={quan_huyens}
+          /> */}
+          {/* <ItemPicker
             header="Chọn Xã/Phường"
             required
             mode="dialog"
-            items={chooseCity}
-          />
+            items={cities}
+          /> */}
         </Content>
       </Container>
     );
@@ -128,7 +138,7 @@ class ItemPicker extends Component {
             selectedValue={this.props.selectedValue}
             onValueChange={this.props.onValueChange}
           >
-            {this.props.items.filter(item => item.label.includes("N")).map(item => {
+            {this.props.items.map(item => {
               return <Picker.Item label={item.label} value={item.value} color={item.color} />
             })}
 

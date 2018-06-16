@@ -1,0 +1,536 @@
+[
+    {
+        "driver-code": "67",
+        "items": [
+            {
+                "label": "Thành phố Long Xuyên"
+            },
+            {
+                "label": "Thành phố Châu Đốc"
+            },
+            {
+                "label": "Huyện An Phú"
+            },
+            {
+                "label": "Thị xã Tân Châu"
+            },
+            {
+                "label": "Huyện Phú Tân"
+            },
+            {
+                "label": "Huyện Châu Phú"
+            },
+            {
+                "label": "Huyện Tịnh Biên"
+            },
+            {
+                "label": "Huyện Tri Tôn"
+            },
+            {
+                "label": "Huyện Châu Thành"
+            },
+            {
+                "label": "Huyện Chợ Mới"
+            },
+            {
+                "label": "Huyện Thoại Sơn"
+            }
+        ]
+    },
+    {
+        "driver-code": "72",
+        "items": [
+            {
+                "label": ""
+            }
+        ]
+    },
+    {
+        "driver-code": "98",
+        "items": [
+            {
+                "label": ""
+            }
+        ]
+    },
+    {
+        "driver-code": "97",
+        "items": [
+            {
+                "label": ""
+            }
+        ]
+    },
+    {
+        "driver-code": "94",
+        "items": [
+            {
+                "label": ""
+            }
+        ]
+    },
+    {
+        "driver-code": "99",
+        "items": [
+            {
+                "label": ""
+            }
+        ]
+    },
+    {
+        "driver-code": "71",
+        "items": [
+            {
+                "label": ""
+            }
+        ]
+    },
+    {
+        "driver-code": "77",
+        "items": [
+            {
+                "label": ""
+            }
+        ]
+    },
+    {
+        "driver-code": "61",
+        "items": [
+            {
+                "label": ""
+            }
+        ]
+    },
+    {
+        "driver-code": "93",
+        "items": [
+            {
+                "label": ""
+            }
+        ]
+    },
+    {
+        "driver-code": "96",
+        "items": [
+            {
+                "label": ""
+            }
+        ]
+    },
+    {
+        "driver-code": "69",
+        "items": [
+            {
+                "label": ""
+            }
+        ]
+    },
+    {
+        "driver-code": "11",
+        "items": [
+            {
+                "label": ""
+            }
+        ]
+    },
+    {
+        "driver-code": "47",
+        "items": [
+            {
+                "label": ""
+            }
+        ]
+    },
+    {
+        "driver-code": "48",
+        "items": [
+            {
+                "label": ""
+            }
+        ]
+    },
+    {
+        "driver-code": "27",
+        "items": [
+            {
+                "label": ""
+            }
+        ]
+    },
+    {
+        "driver-code": "60",
+        "items": [
+            {
+                "label": ""
+            }
+        ]
+    },
+    {
+        "driver-code": "66",
+        "items": [
+            {
+                "label": ""
+            }
+        ]
+    },
+    {
+        "driver-code": "81",
+        "items": [
+            {
+                "label": ""
+            }
+        ]
+    },
+    {
+        "driver-code": "23",
+        "items": [
+            {
+                "label": ""
+            }
+        ]
+    },
+    {
+        "driver-code": "90",
+        "items": [
+            {
+                "label": ""
+            }
+        ]
+    },
+    {
+        "driver-code": "38",
+        "items": [
+            {
+                "label": ""
+            }
+        ]
+    },
+    {
+        "driver-code": "34",
+        "items": [
+            {
+                "label": ""
+            }
+        ]
+    },
+    {
+        "driver-code": "95",
+        "items": [
+            {
+                "label": ""
+            }
+        ]
+    },
+    {
+        "driver-code": "28",
+        "items": [
+            {
+                "label": ""
+            }
+        ]
+    },
+    {
+        "driver-code": "89",
+        "items": [
+            {
+                "label": ""
+            }
+        ]
+    },
+    {
+        "driver-code": "79",
+        "items": [
+            {
+                "label": ""
+            }
+        ]
+    },
+    {
+        "driver-code": "68",
+        "items": [
+            {
+                "label": ""
+            }
+        ]
+    },
+    {
+        "driver-code": "82",
+        "items": [
+            {
+                "label": ""
+            }
+        ]
+    },
+    {
+        "driver-code": "25",
+        "items": [
+            {
+                "label": ""
+            }
+        ]
+    },
+    {
+        "driver-code": "49",
+        "items": [
+            {
+                "label": ""
+            }
+        ]
+    },
+    {
+        "driver-code": "12",
+        "items": [
+            {
+                "label": ""
+            }
+        ]
+    },
+    {
+        "driver-code": "24",
+        "items": [
+            {
+                "label": ""
+            }
+        ]
+    },
+    {
+        "driver-code": "62",
+        "items": [
+            {
+                "label": ""
+            }
+        ]
+    },
+    {
+        "driver-code": "18",
+        "items": [
+            {
+                "label": ""
+            }
+        ]
+    },
+    {
+        "driver-code": "37",
+        "items": [
+            {
+                "label": ""
+            }
+        ]
+    },
+    {
+        "driver-code": "35",
+        "items": [
+            {
+                "label": ""
+            }
+        ]
+    },
+    {
+        "driver-code": "85",
+        "items": [
+            {
+                "label": ""
+            }
+        ]
+    },
+    {
+        "driver-code": "19",
+        "items": [
+            {
+                "label": ""
+            }
+        ]
+    },
+    {
+        "driver-code": "73",
+        "items": [
+            {
+                "label": ""
+            }
+        ]
+    },
+    {
+        "driver-code": "92",
+        "items": [
+            {
+                "label": ""
+            }
+        ]
+    },
+    {
+        "driver-code": "76",
+        "items": [
+            {
+                "label": ""
+            }
+        ]
+    },
+    {
+        "driver-code": "14",
+        "items": [
+            {
+                "label": ""
+            }
+        ]
+    },
+    {
+        "driver-code": "74",
+        "items": [
+            {
+                "label": ""
+            }
+        ]
+    },
+    {
+        "driver-code": "83",
+        "items": [
+            {
+                "label": ""
+            }
+        ]
+    },
+    {
+        "driver-code": "26",
+        "items": [
+            {
+                "label": ""
+            }
+        ]
+    },
+    {
+        "driver-code": "70",
+        "items": [
+            {
+                "label": ""
+            }
+        ]
+    },
+    {
+        "driver-code": "17",
+        "items": [
+            {
+                "label": ""
+            }
+        ]
+    },
+    {
+        "driver-code": "20",
+        "items": [
+            {
+                "label": ""
+            }
+        ]
+    },
+    {
+        "driver-code": "36",
+        "items": [
+            {
+                "label": ""
+            }
+        ]
+    },
+    {
+        "driver-code": "75",
+        "items": [
+            {
+                "label": ""
+            }
+        ]
+    },
+    {
+        "driver-code": "",
+        "items": [
+            {
+                "label": ""
+            }
+        ]
+    },
+    {
+        "driver-code": "63",
+        "items": [
+            {
+                "label": ""
+            }
+        ]
+    },
+    {
+        "driver-code": "22",
+        "items": [
+            {
+                "label": ""
+            }
+        ]
+    },
+    {
+        "driver-code": "64",
+        "items": [
+            {
+                "label": ""
+            }
+        ]
+    },
+    {
+        "driver-code": "88",
+        "items": [
+            {
+                "label": ""
+            }
+        ]
+    },
+    {
+        "driver-code": "21",
+        "items": [
+            {
+                "label": ""
+            }
+        ]
+    },
+    {
+        "driver-code": "78",
+        "items": [
+            {
+                "label": ""
+            }
+        ]
+    },
+    {
+        "driver-code": "65",
+        "items": [
+            {
+                "label": ""
+            }
+        ]
+    },
+    {
+        "driver-code": "43",
+        "items": [
+            {
+                "label": ""
+            }
+        ]
+    },
+    {
+        "driver-code": "15",
+        "items": [
+            {
+                "label": ""
+            }
+        ]
+    },
+    {
+        "driver-code": "30",
+        "items": [
+            {
+                "label": ""
+            }
+        ]
+    },
+    {
+        "driver-code": "50",
+        "items": [
+            {
+                "label": ""
+            }
+        ]
+    }
+]

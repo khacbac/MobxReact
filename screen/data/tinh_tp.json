@@ -1,0 +1,380 @@
+[
+  {
+    "label": "An Giang",
+    "value": "key0",
+    "color": "black",
+    "driver-code": "67"
+  },
+  {
+    "label": "Bà Rịa - Vũng Tàu",
+    "value": "key1",
+    "color": "black",
+    "driver-code": "72"
+  },
+  {
+    "label": "Bắc Giang",
+    "value": "key2",
+    "color": "black",
+    "driver-code": "98"
+  },
+  {
+    "label": "Bắc Kạn",
+    "value": "key3",
+    "color": "black",
+    "driver-code": "97"
+  },
+  {
+    "label": "Bạc Liêu",
+    "value": "key4",
+    "color": "black",
+    "driver-code": "94"
+  },
+  {
+    "label": "Bắc Ninh",
+    "value": "key5",
+    "color": "black",
+    "driver-code": "99"
+  },
+  {
+    "label": "Bến Tre",
+    "value": "key6",
+    "color": "black",
+    "driver-code": "71"
+  },
+  {
+    "label": "Bình Định",
+    "value": "key7",
+    "color": "black",
+    "driver-code": "77"
+  },
+  {
+    "label": "Bình Dương",
+    "value": "key8",
+    "color": "black",
+    "driver-code": "61"
+  },
+  {
+    "label": "Bình Phước",
+    "value": "key9",
+    "color": "black",
+    "driver-code": "93"
+  },
+  {
+    "label": "Bình Thuận",
+    "value": "key10",
+    "color": "black",
+    "driver-code": "96"
+  },
+  {
+    "label": "Cà Mau",
+    "value": "key11",
+    "color": "black",
+    "driver-code": "69"
+  },
+  {
+    "label": "Cao Bằng",
+    "value": "key12",
+    "color": "black",
+    "driver-code": "11"
+  },
+  {
+    "label": "Đắk Lắk",
+    "value": "key13",
+    "color": "black",
+    "driver-code": "47"
+  },
+  {
+    "label": "Đắk Nông",
+    "value": "key14",
+    "color": "black",
+    "driver-code": "48"
+  },
+  {
+    "label": "Điện Biên",
+    "value": "key15",
+    "color": "black",
+    "driver-code": "27"
+  },
+  {
+    "label": "Đồng Nai",
+    "value": "key16",
+    "color": "black",
+    "driver-code": "60"
+  },
+  {
+    "label": "Đồng Tháp",
+    "value": "key17",
+    "color": "black",
+    "driver-code": "66"
+  },
+  {
+    "label": "Gia Lai",
+    "value": "key18",
+    "color": "black",
+    "driver-code": "81"
+  },
+  {
+    "label": "Hà Giang",
+    "value": "key19",
+    "color": "black",
+    "driver-code": "23"
+  },
+  {
+    "label": "Hà Nam",
+    "value": "key20",
+    "color": "black",
+    "driver-code": "90"
+  },
+  {
+    "label": "Hà Tĩnh",
+    "value": "key21",
+    "color": "black",
+    "driver-code": "38"
+  },
+  {
+    "label": "Hải Dương",
+    "value": "key22",
+    "color": "black",
+    "driver-code": "34"
+  },
+  {
+    "label": "Hậu Giang",
+    "value": "key23",
+    "color": "black",
+    "driver-code": "95"
+  },
+  {
+    "label": "Hòa Bình",
+    "value": "key24",
+    "color": "black",
+    "driver-code": "28"
+  },
+  {
+    "label": "Hưng Yên",
+    "value": "key25",
+    "color": "black",
+    "driver-code": "89"
+  },
+  {
+    "label": "Khánh Hòa",
+    "value": "key26",
+    "color": "black",
+    "driver-code": "79"
+  },
+  {
+    "label": "Kiên Giang",
+    "value": "key27",
+    "color": "black",
+    "driver-code": "68"
+  },
+  {
+    "label": "Kon Tum",
+    "value": "key28",
+    "color": "black",
+    "driver-code": "82"
+  },
+  {
+    "label": "Lai Châu",
+    "value": "key29",
+    "color": "black",
+    "driver-code": "25"
+  },
+  {
+    "label": "Lâm Đồng",
+    "value": "key30",
+    "color": "black",
+    "driver-code": "49"
+  },
+  {
+    "label": "Lạng Sơn",
+    "value": "key31",
+    "color": "black",
+    "driver-code": "12"
+  },
+  {
+    "label": "Lào Cai",
+    "value": "key32",
+    "color": "black",
+    "driver-code": "24"
+  },
+  {
+    "label": "Long An",
+    "value": "key33",
+    "color": "black",
+    "driver-code": "62"
+  },
+  {
+    "label": "Nam Định",
+    "value": "key34",
+    "color": "black",
+    "driver-code": "18"
+  },
+  {
+    "label": "Nghệ An",
+    "value": "key35",
+    "color": "black",
+    "driver-code": "37"
+  },
+  {
+    "label": "Ninh Bình",
+    "value": "key36",
+    "color": "black",
+    "driver-code": "35"
+  },
+  {
+    "label": "Ninh Thuận",
+    "value": "key37",
+    "color": "black",
+    "driver-code": "85"
+  },
+  {
+    "label": "Phú Thọ",
+    "value": "key38",
+    "color": "black",
+    "driver-code": "19"
+  },
+  {
+    "label": "Quảng Bình",
+    "value": "key39",
+    "color": "black",
+    "driver-code": "73"
+  },
+  {
+    "label": "Quảng Nam",
+    "value": "key40",
+    "color": "black",
+    "driver-code": "92"
+  },
+  {
+    "label": "Quảng Ngãi",
+    "value": "key40",
+    "color": "black",
+    "driver-code": "76"
+  },
+  {
+    "label": "Quảng Ninh",
+    "value": "key42",
+    "color": "black",
+    "driver-code": "14"
+  },
+  {
+    "label": "Quảng Trị",
+    "value": "key43",
+    "color": "black",
+    "driver-code": "74"
+  },
+  {
+    "label": "Sóc Trăng",
+    "value": "key44",
+    "color": "black",
+    "driver-code": "83"
+  },
+  {
+    "label": "Sơn La",
+    "value": "key45",
+    "color": "black",
+    "driver-code": "26"
+  },
+  {
+    "label": "Tây Ninh",
+    "value": "key46",
+    "color": "black",
+    "driver-code": "70"
+  },
+  {
+    "label": "Thái Bình",
+    "value": "key47",
+    "color": "black",
+    "driver-code": "17"
+  },
+  {
+    "label": "Thái Nguyên",
+    "value": "key48",
+    "color": "black",
+    "driver-code": "20"
+  },
+  {
+    "label": "Thanh Hóa",
+    "value": "key49",
+    "color": "black",
+    "driver-code": "36"
+  },
+  {
+    "label": "Thừa Thiên Huế",
+    "value": "key50",
+    "color": "black",
+    "driver-code": "75"
+  },
+  {
+    "label": "Tiền Giang",
+    "value": "key51",
+    "color": "black",
+    "driver-code": ""
+  },
+  {
+    "label": "Trà Vinh",
+    "value": "key52",
+    "color": "black",
+    "driver-code": "63"
+  },
+  {
+    "label": "Tuyên Quang",
+    "value": "key53",
+    "color": "black",
+    "driver-code": "22"
+  },
+  {
+    "label": "Vĩnh Long",
+    "value": "key54",
+    "color": "black",
+    "driver-code": "64"
+  },
+  {
+    "label": "Vĩnh Phúc",
+    "value": "key55",
+    "color": "black",
+    "driver-code": "88"
+  },
+  {
+    "label": "Yên Bái",
+    "value": "key56",
+    "color": "black",
+    "driver-code": "21"
+  },
+  {
+    "label": "Phú Yên",
+    "value": "key57",
+    "color": "black",
+    "driver-code": "78"
+  },
+  {
+    "label": "Cần Thơ",
+    "value": "key58",
+    "color": "black",
+    "driver-code": "65"
+  },
+  {
+    "label": "Đà Nẵng",
+    "value": "key59",
+    "color": "black",
+    "driver-code": "43"
+  },
+  {
+    "label": "Hải Phòng",
+    "value": "key60",
+    "color": "black",
+    "driver-code": "15"
+  },
+  {
+    "label": "Hà Nội",
+    "value": "key61",
+    "color": "black",
+    "driver-code": "30"
+  },
+  {
+    "label": "TP HCM",
+    "value": "key62",
+    "color": "black",
+    "driver-code": "50"
+  }
+]
