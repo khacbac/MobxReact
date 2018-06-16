@@ -8,8 +8,8 @@ class App extends Component {
     return (
       <View style={styleApp.container}>
         <View style={styleApp.header}>
-          <Text style={styleApp.appName}>EXAM 1: {'\n'}APP COMPONENT</Text>
-          <Text style={styleApp.value}>{this.props.myValue}</Text>
+          <Text style={styleApp.appName}>APP COMPONENT</Text>
+          <Text style={[{ color: this.props.color }, styleApp.value]}>{this.props.myValue}</Text>
         </View>
         <Controller />
       </View>
@@ -17,8 +17,11 @@ class App extends Component {
   }
 }
 
-mapStateToProps = (state)=>{
-  return {myValue:state.value}
+mapStateToProps = (state) => {
+  return {
+    myValue: state.value,
+    color: state.color
+  }
 }
 
 export default connect(mapStateToProps)(App);
@@ -42,7 +45,6 @@ const styleApp = StyleSheet.create({
     textAlign: 'center'
   },
   value: {
-    color: 'yellow',
     fontSize: 40
   }
 });

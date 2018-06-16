@@ -5,23 +5,27 @@ import {
 
 import { connect } from "react-redux";
 
+import * as action from './Action';
+import ChangeColor from './ChangeColor';
+
 class App extends Component {
     render() {
         return (
             <View style={styleController.controller}>
                 <Text style={styleController.controllName}>CONTROLLER COMPONENT</Text>
+                <ChangeColor />
                 <View style={styleController.buttonContainer}>
                     <TouchableOpacity
                         style={styleController.button}
                         onPress={() => {
-                            this.props.dispatch({ type: "UP" });
+                            this.props.counterIncrease();
                         }}>
                         <Text style={styleController.buttonText}>+</Text>
                     </TouchableOpacity>
                     <TouchableOpacity
                         style={styleController.button}
                         onPress={() => {
-                            this.props.dispatch({ type: "DOWN" });
+                            this.props.counterDecrease();
                         }}>
                         <Text style={styleController.buttonText}>-</Text>
                     </TouchableOpacity>
@@ -31,11 +35,7 @@ class App extends Component {
     }
 }
 
-// mapStatToProps = (state)=>{
-//     return
-// }
-
-export default connect()(App);
+export default connect(null, action)(App);
 
 const styleController = StyleSheet.create({
     controller: {
