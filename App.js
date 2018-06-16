@@ -61,7 +61,7 @@ const Stack = createStackNavigator(
     }
   },
   {
-    initialRouteName: "News"
+    initialRouteName: "Home"
   }
 )
 

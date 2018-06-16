@@ -1,47 +1,24 @@
 import React, { Component, } from "react";
-import { View, Text } from 'react-native';
-import { Container, Header, Title, Content, Button, Icon, Right, Body, Left, Picker, Form, Item } from "native-base";
+import { View, Text, TextInput, ScrollView, TouchableOpacity } from 'react-native';
+import {
+  Container,
+  Header,
+  Title,
+  Content,
+  Button,
+  Icon,
+  Right,
+  Body,
+  Left,
+  Picker,
+  Form,
+  Item,
+  CheckBox,
+  ListItem
+} from "native-base";
 
 import cities from './data/tinh_tp.json';
 import quan_huyens from './data/quan_huyen.json';
-
-// const chooseCity = [
-//   {
-//     label: "Nghệ An",
-//     value: "key0",
-//     color: "black"
-//   },
-//   {
-//     label: "Thanh Hóa",
-//     value: "key1",
-//     color: "black"
-//   },
-//   {
-//     label: "Quảng Bình",
-//     value: "key2",
-//     color: "black"
-//   },
-//   {
-//     label: "Hà Nội",
-//     value: "key3",
-//     color: "black"
-//   },
-//   {
-//     label: "Sài Gòn",
-//     value: "key4",
-//     color: "black"
-//   },
-//   {
-//     label: "Hà Nam",
-//     value: "key5",
-//     color: "black"
-//   },
-//   {
-//     label: "Bình Dương",
-//     value: "key6",
-//     color: "black"
-//   }
-// ]
 
 export default class PickerExample extends Component {
   constructor(props) {
@@ -71,51 +48,72 @@ export default class PickerExample extends Component {
           </Body>
           <Right />
         </Header>
-        <Content>
-          <Text style={{ color: 'blue' }}>Email</Text>
-          <Form style={{
-            borderColor: 'black',
-            borderWidth: 1
-          }}>
-            <Picker
-              iosHeader="Select one"
-              mode="dropdown"
-            // selectedValue={this.state.selected1}
-            // onValueChange={this.onValueChange.bind(this)}
-            >
-              <Picker.Item label="Wallet" value="key0" color="black" />
-              <Picker.Item label="ATM Card" value="key1" color="black" />
-              <Picker.Item label="Debit Card" value="key2" color="black" />
-              <Picker.Item label="Credit Card" value="key3" color="black" />
-              <Picker.Item label="Net Banking" value="key4" color="black" />
-            </Picker>
-          </Form>
+        <ScrollView >
+          <Content style={{ padding: 10 }}>
+            <ItemInput
+              header="Chỉnh sửa tên"
+              placeholder="Nhập nội dung" />
 
-          <ItemPicker
-            header="Chọn Tỉnh/Thành phố"
-            required
-            mode="dialog"
-            items={cities}
-            onValueChange={(item) => {
-              this.setState({
-                selected1: item
-              });
-            }}
-            selectedValue={this.state.selected1}
-          />
-          {/* <ItemPicker
-            header="Chọn Quận/Huyện"
-            required
-            mode="dialog"
-            items={quan_huyens}
-          /> */}
-          {/* <ItemPicker
-            header="Chọn Xã/Phường"
-            required
-            mode="dialog"
-            items={cities}
-          /> */}
-        </Content>
+            <ItemInput
+              header="Số điện thoại"
+              placeholder="Nhập lại số điện thoại" />
+
+            <ItemInput
+              header="Email"
+              placeholder="Nhập lại địa chỉ email" />
+
+            <ItemInput
+              required
+              header="Địa chỉ"
+              placeholder="Nhập địa chỉ" />
+
+            <ItemPicker
+              header="Chọn Tỉnh/Thành phố"
+              required
+              mode="dialog"
+              items={cities}
+              onValueChange={(item) => {
+                this.setState({
+                  selected1: item
+                });
+              }}
+              selectedValue={this.state.selected1}
+            />
+
+            <ItemPicker
+              header="Chọn Quận/Huyện"
+              required
+              mode="dialog"
+              items={cities}
+            />
+
+            <ItemPicker
+              header="Chọn Xã/Phường"
+              required
+              mode="dialog"
+              items={cities}
+            />
+
+            <ItemInput
+              required
+              header="Mô tả"
+              placeholder="Nhập nội dung" />
+
+            <View style={{ alignItems: 'center', flexDirection: 'row', marginTop: 10 }}>
+              <CheckBox checked={false} color="green" />
+              <Text style={{ fontSize: 18, marginLeft: 20 }}>Đổi mật khẩu</Text>
+            </View>
+
+          </Content>
+        </ScrollView>
+        <View style={{ alignItems: 'center', flexDirection: 'row', marginTop: 10 }}>
+          <TouchableOpacity style={{ padding: 10, backgroundColor: 'blue', flex: 1 }}>
+            <Text style={{ fontSize: 18, color: 'white', textAlign: 'center' }}>Cập nhật thông tin</Text>
+          </TouchableOpacity>
+          <TouchableOpacity style={{ padding: 10, backgroundColor: 'yellow', flex: 1 }}>
+            <Text style={{ fontSize: 18, color: 'black', textAlign: 'center' }}>Hủy tác vụ</Text>
+          </TouchableOpacity>
+        </View>
       </Container>
     );
   }
@@ -125,12 +123,14 @@ class ItemPicker extends Component {
   render() {
     const txtRquire = '\t*';
     return (
-      <View>
-        <Text style={{ color: 'blue' }}>{this.props.header}{this.props.required && <Text style={{ color: 'red' }}>{txtRquire}</Text>}</Text>
+      <View style={{ marginTop: 10 }}>
+        <Text style={[{ color: 'blue' }, this.props.style]}>{this.props.header}{this.props.required && <Text style={{ color: 'red' }}>{txtRquire}</Text>}</Text>
 
         <Form style={{
           borderColor: 'black',
-          borderWidth: 1
+          borderWidth: 1,
+          marginTop: 10,
+          borderRadius: 10
         }}>
           <Picker
             iosHeader="Select one"
@@ -139,10 +139,33 @@ class ItemPicker extends Component {
             onValueChange={this.props.onValueChange}
           >
             {this.props.items.map(item => {
-              return <Picker.Item label={item.label} value={item.value} color={item.color} />
+              return <Picker.Item key={item.label} label={item.label} value={item.value} color={item.color} />
             })}
 
           </Picker>
+        </Form>
+      </View>
+    )
+  }
+}
+
+class ItemInput extends Component {
+  render() {
+    const txtRquire = '\t*';
+    return (
+      <View style={{ marginTop: 10 }}>
+        <Text style={[{ color: 'blue' }, this.props.style]}>{this.props.header}{this.props.required && <Text style={{ color: 'red' }}>{txtRquire}</Text>}</Text>
+
+        <Form style={{
+          borderColor: 'black',
+          borderWidth: 1,
+          marginTop: 10,
+          borderRadius: 10
+        }}>
+          <TextInput
+            placeholder={this.props.placeholder}
+            underlineColorAndroid="transparent"
+            android />
         </Form>
       </View>
     )
