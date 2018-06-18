@@ -18,14 +18,16 @@ import {
 } from "native-base";
 
 import cities from './data/tinh_tp.json';
-import quan_huyens from './data/quan_huyen.json';
 
 export default class PickerExample extends Component {
   constructor(props) {
     super(props);
+
     this.state = {
-      selected1: "key0",
-      quan_huyens: []
+      selected_tinh: "",
+      selected_quan: "",
+      quan_huyens: Object.values(Object.values(cities).filter(item => item.name === "Thành phố Cần Thơ")[0].districts),
+      tinh: []
     };
   }
   onValueChange(value) {
@@ -67,32 +69,51 @@ export default class PickerExample extends Component {
               header="Địa chỉ"
               placeholder="Nhập địa chỉ" />
 
+            {/* Item chọn tỉnh / thành phố */}
             <ItemPicker
               header="Chọn Tỉnh/Thành phố"
               required
               mode="dialog"
-              items={cities}
-              onValueChange={(item) => {
+              onValueChange={(value) => {
+                let filter = Object.values(cities).filter(item => item.name === value);
                 this.setState({
-                  selected1: item
+                  selected_tinh: value,
+                  quan_huyens: Object.values(filter[0].districts)
                 });
               }}
-              selectedValue={this.state.selected1}
-            />
+              selectedValue={this.state.selected_tinh}
+            >
+              {Object.values(cities).map((item, index) => {
+                return <Picker.Item key={index} label={item.name} value={item.name} color={item.color} />
+              })}
+            </ItemPicker>
 
+            {/* Item chọn quận huyện tương ứng */}
             <ItemPicker
               header="Chọn Quận/Huyện"
               required
               mode="dialog"
-              items={cities}
-            />
+              onValueChange={(value) => {
+                this.setState({
+                  selected_quan: value,
+                });
+              }}
+              selectedValue={this.state.selected_quan}
+            >
+              {Object.values(this.state.quan_huyens).map((item, index) => {
+                return <Picker.Item key={index} label={item} value={item} color={item.color} />
+              })}
+            </ItemPicker>
 
+            {/* Item chọn xã phường */}
             <ItemPicker
               header="Chọn Xã/Phường"
               required
               mode="dialog"
-              items={cities}
-            />
+            >
+            </ItemPicker>
+
+
 
             <ItemInput
               required
@@ -138,9 +159,15 @@ class ItemPicker extends Component {
             selectedValue={this.props.selectedValue}
             onValueChange={this.props.onValueChange}
           >
-            {this.props.items.map(item => {
+            {/* {this.props.items.map(item => {
               return <Picker.Item key={item.label} label={item.label} value={item.value} color={item.color} />
+            })} */}
+
+            {/* {this.props.items.map((item, index) => {
+              return <Picker.Item key={index} label={item.name} value={index} color={item.color} />
             })}
+             */}
+            {this.props.children}
 
           </Picker>
         </Form>

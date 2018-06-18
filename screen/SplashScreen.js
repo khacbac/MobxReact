@@ -60,7 +60,6 @@ export default class SplashScreen extends Component {
   }
 
   componentDidMount(){
-    this.props.navigation.navigate("Login")
   }
 
   render() {

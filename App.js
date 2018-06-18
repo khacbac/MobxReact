@@ -21,7 +21,7 @@ import {
 import Splash from './screen/SplashScreen';
 import Login from './screen/LoginScreen';
 import Home from './screen/HomeScreen';
-import History from './screen/HistoryScreen';
+import History from './screen/history';
 import News from './screen/NewsScreen';
 import About from './screen/AboutScreen';
 import Content from './screen/ContentDrawer';
@@ -61,7 +61,7 @@ const Stack = createStackNavigator(
     }
   },
   {
-    initialRouteName: "Home"
+    initialRouteName: "History"
   }
 )
 
